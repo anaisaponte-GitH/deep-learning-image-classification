@@ -67,17 +67,15 @@ The model shows a clear improvement over the initial baseline and achieves a rea
 
 The dataset is not included in this repository due to size limitations.
 
-You can use the standard Cats vs Dogs dataset from Kaggle and place it inside the `data/` folder following this structure:
+Please download the Cats vs Dogs dataset (e.g., from Kaggle) and place the images in the following directory:
 
-```text
-data/
-├── train/
-│   ├── cats/
-│   └── dogs/
-├── validation/
-│   ├── cats/
-│   └── dogs/
-```
+data/raw/dogs-vs-cats/train
+
+The images should be organized in two folders:
+
+data/raw/dogs-vs-cats/train/cat/  
+data/raw/dogs-vs-cats/train/dog/  
+
 
 ---
 
