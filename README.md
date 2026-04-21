@@ -86,7 +86,7 @@ data/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/anaisaponte-GitH/deep-learning-image-classification.git
 cd deep-learning-image-classification
 ```
 
