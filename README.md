@@ -67,14 +67,22 @@ The model shows a clear improvement over the initial baseline and achieves a rea
 
 The dataset is not included in this repository due to size limitations.
 
-Please download the Cats vs Dogs dataset (e.g., from Kaggle) and place the images in the following directory:
+This project uses the public **Dogs vs. Cats** image classification dataset originally released through Kaggle/Microsoft.
+
+You can download it from Kaggle:  [Dogs vs. Cats competition dataset](https://www.kaggle.com/c/dogs-vs-cats/data)
+
+After downloading, place the images in the following directory:
 
 data/raw/dogs-vs-cats/train
 
 The images should be organized in two folders:
 
 data/raw/dogs-vs-cats/train/cat/  
-data/raw/dogs-vs-cats/train/dog/  
+data/raw/dogs-vs-cats/train/dog/
+
+The notebook expects images to be already organized in these folders.
+
+If the folders are empty, the notebook will run but data loading cells will fail because no images are available.
 
 
 ---
@@ -104,13 +112,38 @@ Dependencies are listed in `requirements.txt`.
 
 ### 4. Add dataset
 
-Place the dataset inside the `data/` folder as described above.
+For dataset details, see the Dataset section above.
+
+Download the Cats vs Dogs dataset from Kaggle and place the images using the following structure:
+
+```text
+data/
+└── raw/
+    └── dogs-vs-cats/
+        └── train/
+            ├── cat/
+            │   ├── cat.0.jpg
+            │   ├── cat.1.jpg
+            │   └── ...
+            └── dog/
+                ├── dog.0.jpg
+                ├── dog.1.jpg
+                └── ...
+````
+
+The notebook expects the images to be available at:
+```text
+data/raw/dogs-vs-cats/train/
+```
+
+with two subfolders: cat/ and dog/.
 
 ### 5. Run notebook
 
 ```bash
 jupyter notebook cnn_image_classification.ipynb
 ```
+Then open the notebook and click **"Run All"** to execute the full pipeline.
 
 ---
 
@@ -138,4 +171,4 @@ This project demonstrates:
 
 ## 👩‍💻 Author
 
-Anais Aponte
+Ing. Anais Aponte
